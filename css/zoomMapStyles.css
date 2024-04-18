@@ -1,0 +1,508 @@
+#zoomMap {
+  width: 650px;
+  margin: 15px auto;
+  position: relative;
+  background: black url(../images/zoom/frame.png) 0 0 no-repeat;
+  height: 463px;
+}
+.zoomHeader .mainTitle {
+  padding: 9px 10px 7px;
+  font-size: 21px;
+}
+.zoomHeader .mainTitle span {
+  color: #fef5e7;
+  margin-top: 3px;
+  font-size: 18px;
+}
+
+.mainTitle {
+float: left;
+margin-right: 6px;
+padding-left: 17px;
+padding-bottom: 4px;
+color:#fef5e7;
+font-size: 1.2em;
+}
+
+
+.zoomHeader {
+  height: 56px;
+}
+.zoomMapInfo {
+  position: absolute;
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  width: 100%;
+  height: 47px;
+  top: 416px;
+}
+.zoomMapInfo div {
+  padding: 5px 10px;
+  display: block;
+  display: none;
+}
+.zoomMapInstImg {
+  float: right;
+  font-size: 11px;
+  background: #FFF;
+  margin: 12px 12px;
+  text-align: center;
+  border-radius: 50%;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+  line-height: 1.6em;
+  box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.5);
+}
+.zoomMapInstImg:hover {
+  color: red;
+  box-shadow: none;
+}
+.zoomMapInstImg:active {
+  background: #CCC;
+}
+.zoomMapInst {
+  display: none;
+  position: absolute;
+  z-index: 2000;
+  top: 160px;
+  left: 180px;
+  font-size: 14px;
+  background-color: #F5F5F5;
+  opacity: .9;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  width: 280px;
+  margin: 0px;
+  padding: 10px;
+  padding-bottom: 15px;
+  font-family: Verdana, Arial, sans-serif;
+}
+.zoomCloseX {
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  left: 270px;
+  top: 1px;
+  border: 2px solid #666;
+  padding: 1px 4px 2px 4px;
+  margin: 5px;
+  border-radius: 3px;
+}
+.zoomCloseX:hover {
+  color: red;
+  border-color: orangered;
+}
+.zoomMapInstTitle {
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+.zoomMapMap {
+  position: relative;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+.zoomMapList {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  right: 0;
+  padding: 5px 15px;
+  width: 95px;
+}
+.zoomMapList ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.dragFlag, .zoomDrop {
+  width: 86px;
+  background: #EEE;
+  border-radius: 3px;
+  padding: 3px 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  height: 15px;
+  text-transform: capitalize;
+}
+.dragFlag {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  margin: 4px 0;
+  color: #000;
+  background: #eaede5;
+  border: solid 1px #000;
+  height: auto;
+}
+.dragFlag:hover {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+.zoomDrop {
+  position: absolute;
+  text-align: center;
+  opacity: 0.8;
+}
+.ui-draggable-dragging {
+  opacity: 0.7;
+}
+.ui-droppable.zoomTargetHover:after {
+	content: "";
+	position: absolute;
+	width: 99px;
+	height: 25px;
+	top: -3px;
+	left: -3px;
+	border: 1px dashed #FFF;
+	border-radius: 6px;
+	box-shadow: inset 0 0 2px #FFF;
+}
+.correct {
+  border: 1px solid #DDD;
+  background: #333;
+  color: #fff;
+  cursor: text;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 1.1em;
+  width: auto;
+  min-width: 86px;
+}
+#countryCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#globe {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 650px;
+  height: 400px;
+  z-index: 999;
+}
+.skip {
+  z-index: 9999;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #906618;
+  cursor: pointer;
+}
+.skip:hover {
+  color: orange;
+}
+#clickMap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 650px;
+  height: 360px;
+  background: #000;
+  overflow: hidden;
+}
+#loadOverlay {
+  display: none;
+  position: absolute;
+  width: 650px;
+  height: 360px;
+}
+#imgLoader {
+  color: black;
+  width: 150px;
+  background: #adadad;
+  padding: 3px 0;
+  margin: 168px auto;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #FFF;
+  text-shadow: 0 1px 0 #CCC;
+  position: relative;
+}
+#imgProgress {
+  background: #378000;
+  width: 4%;
+  height: 23px;
+  position: absolute;
+  top: 0;
+  border-radius: 4px 0 0 4px;
+  opacity: 0.5;
+}
+#mapOverlay {
+  width: 650px;
+  height: 360px;
+}
+.zoomTip {
+  position: absolute;
+  background: #FFF;
+  padding: 0 5px 1px 5px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+}
+.zoomTip::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  border-color: #ffffff transparent transparent transparent;
+  top: 22px;
+  left: 15px;
+}
+.zoomMapInfo {
+  position: absolute;
+  background: #333;
+  color: #fef5e7;
+  font-size: 15px;
+  width: 100%;
+  top: 416px;
+}
+.zoomMapInfo span {
+  display: none;
+  padding: 13px 15px 15px 15px;
+  display: block;
+}
+.zoomMapInfo strong {
+  padding: 5px 10px;
+  background: #FFF;
+  border-radius: 50%;
+  margin: 0 5px 0 0;
+  color: #ff3600;
+  font-weight: bold;
+  line-height: 0;
+}
+
+/*Continents*/
+#northAmericaBox, #southAmericaBox, #africaBox, #europeBox, #asiaBox, #oceaniaBox {
+  display: none;
+  position: absolute;
+}
+#northAmericaBox {
+  top: 18px;
+  left: 4px;
+  width: 297px;
+  height: 165px;
+  background: url(../images/zoom/northAmerica.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#southAmericaBox {
+  top: 170px;
+  left: 22px;
+  width: 267px;
+  height: 148px;
+  background: url(../images/zoom/southAmerica.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#africaBox {
+  top: 115px;
+  left: 179px;
+  width: 283px;
+  height: 158px;
+  background: url(../images/zoom/africa.jpg) 0 0 no-repeat;
+  background-size: auto auto;
+  background-size: 100%;
+}
+#europeBox {
+  top: 41px;
+  left: 227px;
+  width: 148px;
+  height: 103px;
+  background: url(../images/zoom/europe.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#asiaBox {
+  top: 26px;
+  right: 1px;
+  width: 337px;
+  height: 197px;
+  background: url(../images/zoom/asia.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#oceaniaBox {
+  top: 188px;
+  left: 518px;
+  width: 227px;
+  height: 126px;
+  background: url(../images/zoom/oceania.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#northAmericaBox2, #southAmericaBox2, #africaBox2, #europeBox2, #asiaBox2, #oceaniaBox2 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#northAmericaBox2 {
+  background: url(../images/zoom/northAmericaBG.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#southAmericaBox2 {
+  background: url(../images/zoom/southAmericaBG.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#africaBox2 {
+  background: url(../images/zoom/africaBG.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#europeBox2 {
+  background: url(../images/zoom/europeBG.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#asiaBox2 {
+  background: url(../images/zoom/asiaBG.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#oceaniaBox2 {
+  background: url(../images/zoom/oceaniaBG.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+.cont {
+  cursor: pointer;
+}
+/*Asia*/
+#northernAsiaBox, #centralAsiaBox, #southWesternAsiaBox, #easternAsiaBox, #southEasternAsiaBox, #southernAsiaBox {
+  display: none;
+  position: absolute;
+}
+#northernAsiaBox {
+  top: 18px;
+  left: 4px;
+  width: 297px;
+  height: 165px;
+  background: url(../images/zoom/northernAsia.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#centralAsiaBox {
+  top: 79px;
+  left: 88px;
+  width: 205px;
+  height: 116px;
+  background: url(../images/zoom/centralAsia.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#southWesternAsiaBox {
+  top: 168px;
+  left: 34px;
+  width: 186px;
+  height: 104px;
+  background: url(../images/zoom/southWesternAsia.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#easternAsiaBox {
+  top: 59px;
+  left: 209px;
+  width: 370px;
+  height: 205px;
+  background: url(../images/zoom/easternAsia.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#southEasternAsiaBox {
+  top: 26px;
+  right: 1px;
+  width: 337px;
+  height: 197px;
+  background: url(../images/zoom/southEasternAsia.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#southernAsiaBox {
+  top: 149px;
+  left: 162px;
+  width: 105px;
+  height: 165px;
+  background: url(../images/zoom/southernAsia.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#northernAsiaBox2, #centralAsiaBox2, #southWesternAsiaBox2, #easternAsiaBox2, #southEasternAsiaBox2, #southernAsiaBox2 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#northernAsiaBox2 {
+  background: url(../images/zoom/northernAsiaBG.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#centralAsiaBox2 {
+  background: url(../images/zoom/centralAsiaBG.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#southWesternAsiaBox2 {
+  background: url(../images/zoom/southWesternAsiaBG.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#easternAsiaBox2 {
+  background: url(../images/zoom/easternAsiaBG.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#southEasternAsiaBox2 {
+  background: url(../images/zoom/southEasternAsiaBG.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+#southernAsiaBox2 {
+  background: url(../images/zoom/southernAsiaBG.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+.region {
+  cursor: pointer;
+}
+
+/*Africa*/
+#northernAfricaBox, #centralAfricaBox, #southWesternAfricaBox, #easternAfricaBox, #southEasternAfricaBox, #southernAfricaBox, #westAfricaBox {
+  display: none;
+  position: absolute;
+}
+#westAfricaBox {
+  top: 87px;
+  left: 215px;
+  width: 155px;
+  height: 165px;
+  background: url(../images/zoom/westAfrica.jpg) 0 0 no-repeat;
+  background-size: auto auto;
+  background-size: 100%;
+}
+/*Europe*/
+#easternEuropeBox, #southEasternEuropeBox, #westernEuropeBox, #westernEuropeBox{
+  display: none;
+  position: absolute;
+}
+
+#easternEuropeBox {
+  top: 150px;
+  left: 320px;
+  width: 200px;
+  height: 200px;
+  background: url(../images/zoom/easternEurope.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}
+
+#easternEuropeBox2, #southEasternEuropeBox2, #westernEuropeBox2, #westernEuropeBox2{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#easternEuropeBox2 {
+  background: url(../images/zoom/easternEuropeBG.jpg) 0 0 no-repeat;
+  background-size: 100%;
+}

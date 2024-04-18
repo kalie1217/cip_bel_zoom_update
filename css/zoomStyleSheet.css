@@ -1,0 +1,218 @@
+html{
+	/*Keeps Vert Scrollbar on in Firefox at all time and avoids image shifting- do not delete*/
+	overflow:-moz-scrollbars-vertical;
+	overflow-y: scroll;
+}
+body {
+	font-family:Verdana, Geneva, sans-serif;
+}
+#zoomHTML5 {
+	margin:0px auto 0px auto;
+	padding:0px;
+	width:650px;
+	height:400px;
+	background-image:url(../images/zoom/zoomFrame.png);
+}
+#zoomTitleDiv {
+	position:relative;
+	left:10px;
+	top:10px;
+	font-size:18px;
+	color:#fef5e7;
+}
+#zoomSubHeader {
+	float: left;
+	margin-top: 3px;
+}
+.mainTitle {
+float: left;
+margin-right: 6px;
+color: darkgray;
+/*color: #fef5e7; */
+font-size: 1.2em;
+}
+#zoomInstrDiv{
+	position:relative;
+	width:80px;
+	left:570px;
+	top:-12px;
+	font-size:11px;
+	color:#FFF;
+}
+
+#zoomInstructions{
+	position:relative;
+	margin:0px;
+	padding: 10px 10px 15px 13px;
+	width:300px;
+	top:-250px;
+	left: 170px;
+	background-color:#ffffff;
+	opacity:.9;
+	border:1px solid #999;
+	z-index:200;
+	display:none;
+}
+.zoomInstrTitle {
+	margin:0px;
+	padding: 0px;
+	font-size:12px;
+	font-weight:bold;
+	text-align:left;
+	margin-bottom:10px;
+}
+#zoomInstrContent {
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+	text-align:left;
+}
+#zoomInstrCloseX
+{
+	 margin:0px 0px 0px 0px;
+	 padding:0px 2px 0px 2px;
+	 position:absolute;
+	left:292px;
+	top:8px;
+	border: 1px solid #666;
+	font-size:14px;
+	font-weight:bold;
+}
+#zoomDisplayInfo {
+	position:relative;
+	margin:0px;
+	padding:0px;
+	width:300px;
+	top:10px;
+	left: 14px;
+	width:624px;
+	height:340px;
+
+}
+.zoomMaps {
+	position:absolute;
+	left:0px;
+	top:0px;
+	margin:0px;
+	padding:0px;
+	width:624px;
+	height:340px;
+	border:none;
+	overflow:hidden;
+}
+#zoomOutSideButtonDiv {
+	position:absolute;
+	left:0px;
+	top:0px;
+	margin:0px;
+	padding:0px;
+
+}
+.zoomMapsNames {
+	position:absolute;
+	font-size:10px;
+	text-align:center;
+	font-style:italic;
+	color:#EFEFEF;
+}
+.zoomButtonsName{
+	font-size:10px;
+	letter-spacing:-1px;
+	text-align:center;
+	float:left;
+	margin:0px;
+	padding:0px;
+	border-top:1px solid #000;
+	border-left:1px solid #000;
+	cursor:pointer;
+	background-image:url(../images/zoom/bordersBtn_2x20px.png);
+}
+.zoomButtonsNameEnd{
+	font-size:10px;
+	letter-spacing:-1px;
+	text-align:center;
+	float:left;
+	margin:0px;
+	padding:0px;
+	border-top:1px solid #000;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	cursor:pointer;
+}
+.zoomNamesRegions {
+	position:absolute;
+	letter-spacing:2px;
+	font-size:11px;
+	text-align:center;
+	color:#000000;
+}
+.zoomMiscNamesRegions {
+	position:absolute;
+	letter-spacing:.5px;
+	font-size:10px;
+	text-align:center;
+	z-index:10000;
+}
+.zoomALine {
+	position:absolute;
+	z-index:700;
+	margin:0px;
+	padding:0px;
+	border-left:1px solid #000;
+	width:1px;
+}
+
+.zoomGraphics {
+	position:absolute;
+	z-index:500;
+	margin:0px;
+	padding:0px;
+	opacity:1;
+
+}
+.zoomIcons {
+	position:absolute;
+	z-index:10000;
+	margin:0px;
+	padding:0px;
+
+
+}
+#zoomLoadingImgDiv {
+	position:absolute;
+	left:200px;
+	top:100px;
+	margin:0px;
+	padding:0px;
+}
+#zoomTextDisplayRegionDiv {
+	position:absolute;
+	left:0px;
+	top:0px;
+	margin:0px;
+	padding:4px;
+	border:1px solid #999999;
+	background-color:#FFFFFF;
+	color:#000;
+	font-size:11px;
+	z-index:300;
+}
+.zoomTextDisplayContent {
+	margin:0px;
+	padding:0px;
+	color:#000;
+	font-size:11px;
+}
+#zoomBackGroundDiv {
+	position:absolute;
+	width:624px;
+	height:340px;
+	background-image:url(../images/zoom/zoomBG.png);
+}
+.iconText {
+	text-transform:uppercase;
+	font-size:11px;
+	color:#000;
+	font-weight:bold;
+	z-index:10000;
+}

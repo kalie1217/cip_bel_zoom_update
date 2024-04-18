@@ -1,0 +1,314 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+a, a:visited {
+	color: #FC0;
+}
+#popUpImage {
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	width: 650px;
+	height: 400px;
+	z-index: 10000;
+	display: none;
+}
+#popUpTop {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 650px;
+	height: 30px;
+	background-color: #333333;
+}
+
+#closeBtn {
+	position: absolute;
+	left: 623px;
+	top: 4px;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #FFF;
+	z-index: 1200;
+	padding: 2px;
+	cursor: pointer;
+}
+
+#textPopUp {
+	position: absolute;
+	left: 0px;
+	width: 635px;
+	font-size: 12px;
+	color: #FFF;
+	background-color: #333333;
+}
+#copyrightDiv {
+	position: absolute;
+	font-size: 9px;
+	color:#FFF;
+	background-color: rgba(0,0,0,0.8);
+}
+#pictureImage {
+	position: absolute;
+	left: 0px;
+	top: 30px;
+	width: 650px;
+}
+#ethnicDropHTML5 {
+	margin: 0 auto;
+	width: 650px;
+	height: 400px;
+	position: relative;
+	background-image: url(../images/ethnic/frame.png)
+}
+#ethnicHeader{
+	position:absolute;
+	left:10px;
+	top:10px;
+	color:#fef5e7;
+	font-size:18px;
+}
+#ethnicSubHeader {
+	float: left;
+	margin-top: 3px;
+}
+.mainTitle {
+float: left;
+margin-right: 6px;
+color: darkgray;
+font-size: 1.2em;
+}
+
+#Russians_overlay {
+	background-size: contain;
+}
+
+.imgOverlay {
+	position: absolute;
+	background-repeat: no-repeat;
+	z-index: 2;
+	width: 650px;
+	height: 400px;
+}
+
+#map {
+	float: left;
+	clear: both;
+	width: 650px;
+	height: 340px;
+	position: relative;
+	top: 55px;
+	background-color: #CCC;
+}
+
+#ethnicDropRightMenu {
+	position: absolute;
+	width: 140px;
+	left: 504px;
+	top: 0px;
+	color: #fff;
+	padding: 5px 0 5px 5px;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 150;
+}
+
+#ethnicDropAccordionMenu {
+	position: relative;
+	width: 134px;
+	top: 0px;
+	left: 3px;
+	background-color: #8c9d70;
+}
+
+.ethbuttonHeader {
+	position: relative;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	width: 130px;
+	height: 24px;
+	padding: 6px 0 0 2px;
+	cursor:default;
+	/*background:-moz-linear-gradient(65% 35% 90deg, #85986b, #a8b791 30%);*/
+	background: #a8b791; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiNhOGI3OTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjODU5ODZiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(top, #a8b791 30%, #85986b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #a8b791), color-stop(100%, #85986b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a8b791 30%, #85986b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #a8b791 30%, #85986b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #a8b791 30%, #85986b 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #a8b791 30%, #85986b 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8b791', endColorstr='#85986b', GradientType=0 ); /* IE6-8 */
+	border: solid 1px #666;
+}
+
+.ethbuttonHolder {
+	position: relative;
+	margin: 0 0 2px 0;
+}
+
+.drag {
+	position: relative;
+	left: 2px;
+	font-size: 11px;
+	color: #000;
+	width: 126px;
+	/*background:-moz-linear-gradient(50% 50% 90deg, #dde2d4, #eaede5 10%);*/
+	background: #eaede5; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiNlYWVkZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZGRlMmQ0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(top, #eaede5 10%, #dde2d4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #eaede5), color-stop(100%, #dde2d4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #eaede5 10%, #dde2d4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #eaede5 10%, #dde2d4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #eaede5 10%, #dde2d4 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #eaede5 10%, #dde2d4 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaede5', endColorstr='#dde2d4', GradientType=0 ); /* IE6-8 */
+	border: solid 1px #666666;
+	padding: 3px;
+	margin: 2px 0 2px 0;
+	cursor: pointer;
+}
+
+.drop {
+	position: absolute;
+	background-color: #ffffff;
+	border: 1px solid #666;
+	font-size: 11px;
+	color: #000000;
+	margin: 0px 0px 0px 0px;
+	/*float:left;*/
+	text-align: center;
+	padding: 2px 0px 0px 0px;
+	cursor: pointer;
+	z-index: 5;
+}
+
+._jsPlumb_connector:hover { cursor: pointer; }
+
+.ethnicDropOutsideBox {
+	position: relative;
+	width: 1px;
+	height: 1px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 100;
+}
+
+#ethnicDropHintBox {
+	position: absolute;
+	width: 600px;
+	height: 15px;
+	z-index: 800;
+	top: 37px;
+	left: 0px;
+	color: rgba(255, 234, 0, 1);
+	padding: 2px 0 0 10px;
+	font-size: 12px;
+}
+
+.circleImg {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background: rgba(0, 0, 0, 0);
+}
+
+#ethnicDropComBox {
+	width: 200px;
+	padding: 5px;
+	height: 334px;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#ethnicDropComImg {
+	position: absolute;
+	top: 22px;
+	width: 200px;
+	height: 150px;
+	border: 1px solid #f0f0f0;
+}
+
+/*#ethnicDropComText{
+	position:absolute;
+	top:182px;
+	width:190px;
+	height:150px;
+	color:#f0f0f0;
+	border:1px solid #f0f0f0;
+	font-size:12px;
+	padding:5px;
+}
+#ethnicDropComClose{
+	position:absolute;
+	top:6px;
+	left:152px;
+}
+#ethnicDropComCloseX{
+	position:absolute;
+	top:0px;
+	left:45px;
+	font-weight:bold;
+	font-size:12px;
+}*/
+
+#ethnicDropContent {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 3px 8px 6px;
+	font-size: 12px;
+}
+
+#ethnicDropInstrImg {
+	position: absolute;
+	z-index: 1200;
+	top: -40px;
+	left: 625px;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+
+#ethnicDropWelcomeBox {
+	position: absolute;
+	z-index: 2000;
+	top: 80px;
+	left: 180px;
+	background-color: #ccc;
+	opacity: .9;
+	-moz-box-shadow: 5px 5px 2px black;
+	-webkit-box-shadow: 5px 5px 2px black;
+	box-shadow: 5px 5px 2px black;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width: 280px;
+	margin: 0px;
+	padding: 10px;
+	padding-bottom: 15px;
+}
+
+#ethnicDropWelcomeContent {
+	margin: 0px;
+	color: #000000;
+	font-size: 11px;
+}
+
+#ethnicDropCloseX {
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+	left: 270px;
+	top: 6px;
+	outline: 2px solid #666;
+	outline-offset: 0px;
+	padding: 0px;
+	margin: 5px;
+}
+
+.ethnicDropInstrTitle {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 12px;
+}

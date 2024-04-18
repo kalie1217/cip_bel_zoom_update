@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zoom>
+  <targetCountry>Belarus</targetCountry>
+  <title>Belarus</title>
+  <subtitle>Zoom Map</subtitle>
+  <country dropX="150" dropY="30">Latvia</country>
+  <country dropX="290" dropY="324">Ukraine</country>
+  <country dropX="415" dropY="144">Russia</country>
+  <country dropX="248" dropY="185">Belarus</country>
+  <country dropX="132" dropY="100">Lithuania</country>
+  <country dropX="34" dropY="255">Poland</country>
+
+</zoom>
+

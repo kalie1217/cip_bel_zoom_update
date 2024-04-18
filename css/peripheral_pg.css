@@ -1,0 +1,37 @@
+
+body {
+	background-color: #eee;
+  width: 75%;
+  min-width: 320px;
+  margin: 0px auto;
+  font-family: Georgia, Helvetica, Arial;
+  color: #444;
+}
+
+h1 {
+  font-size: 1.2em;
+  color: #888;
+}
+
+.dliLogo{
+  background-image: url(../images/DLIcrest.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin: 10px 10px 100vh 0px;
+}
+
+.details{
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 1em;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px 0px #888;
+}
+
+p {
+  margin: 1em;
+  line-height: 22px;
+}

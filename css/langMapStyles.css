@@ -1,0 +1,150 @@
+#langMap {
+  width: 650px;
+  margin: 15px auto;
+  position: relative;
+  background: black url(../images/langMap/frame.png) 0 0 no-repeat;
+}
+.langOverlay {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: -10px 0;
+  width: 500px;
+  height: 360px;
+}
+.langMapList {
+  float: left;
+  width: 150px;
+  height: 360px;
+  background: #444;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+.langMapList ul {
+  padding: 0;
+  margin: 0;
+}
+.langMapList ul li {
+  list-style-type: none;
+  font-size: 11px;
+  cursor: default;
+  background: -moz-linear-gradient(50% 50% 90deg, #dde2d4, #eaede5 10%);
+  background: #eaede5;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiNlYWVkZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZGRlMmQ0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+  background: -moz-linear-gradient(top, #eaede5 10%, #dde2d4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #eaede5), color-stop(100%, #dde2d4));
+  background: -webkit-linear-gradient(top, #eaede5 10%, #dde2d4 100%);
+  background: -o-linear-gradient(top, #eaede5 10%, #dde2d4 100%);
+  background: -ms-linear-gradient(top, #eaede5 10%, #dde2d4 100%);
+  background: linear-gradient(to bottom, #eaede5 10%, #dde2d4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaede5', endColorstr='#dde2d4', GradientType=0 );
+  display: inline-block;
+  width: 138px;
+  margin: 2px 3px;
+  padding: 7px 3px;
+  line-height: 1.3em;
+  border-radius: 2px;
+}
+.langMapList ul li:first-child {
+  margin-top: 4px;
+}
+.langMapList ul li:hover {
+  background: #FFF;
+}
+.langMapMap {
+  float: left;
+  width: 500px;
+  height:360px;
+  overflow: hidden;
+  position: relative;
+}
+.langMapMap img {
+  position: absolute;
+  left: -10px;
+}
+.langHeader .mainTitle {
+  padding: 9px 10px 7px;
+  font-size: 21px;
+}
+.langHeader .mainTitle span {
+  color: #fef5e7;
+  margin-top: 3px;
+  font-size: 18px;
+}
+.langHeader {
+  height: 56px;
+}
+.langMapInfo {
+  float: left;
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  width: 100%;
+  height: 47px;
+}
+.langMapInfo div {
+	line-height: 1.2em;
+  padding: 5px 10px;
+  display: block;
+  display: none;
+}
+.langMapInstImg {
+  float: right;
+  font-size: 11px;
+  background: #FFF;
+  margin: 12px 12px;
+  text-align: center;
+  border-radius: 50%;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+  line-height: 1.6em;
+  box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.5);
+}
+.langMapInstImg:hover {
+  color: red;
+  box-shadow: none;
+}
+.langMapInstImg:active {
+  background: #CCC;
+}
+.langMapInst {
+  position: absolute;
+  z-index: 2000;
+  top: 160px;
+  left: 110px;
+  font-size: 11px;
+  background-color: #F5F5F5;
+  opacity: .9;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  width: 280px;
+  margin: 0px;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+.langCloseX {
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  left: 270px;
+  top: 1px;
+  border: 2px solid #666;
+  padding: 1px 4px 2px 4px;
+  margin: 5px;
+  border-radius: 3px;
+}
+.langCloseX:hover {
+  color: red;
+  border-color: orangered;
+}
+.langMapInstTitle {
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 12px;
+}

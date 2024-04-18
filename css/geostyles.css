@@ -1,0 +1,346 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.buttonHeader {
+	outline: 0;
+}
+
+#popUpImage {
+	position:absolute;
+	left:0px;
+	top:40px;
+	width:650px;
+	height:400px;
+	z-index:10000;
+	display:none;
+}
+#popUpTop {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:650px;
+	height:30px;
+	background-color:#333333;
+}
+#closeBtn {
+  left: 620px;
+  top: 0;
+  border: 2px solid #BBB;
+  z-index: 1200;
+  color: #DDD;
+  padding: 1px 4px 2px 4px;
+}
+#closeBtn:hover {
+  color: #ec8787;
+  border-color: #c54a1c;
+}
+#closeBtn:active {
+	color: #c27070;
+	border-color: #8d3514;
+}
+#textPopUp {
+	position:absolute;
+	left:0px;
+	width:635px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	background-color:#333333;
+}
+#copyrightDiv {
+	position:absolute;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:9px;
+	color:#FFF;
+	background-color: rgba(0,0,0,0.5);
+}
+#pictureImage {
+	position:absolute;
+	left:0px;
+	top:30px;
+	width:650px;
+	height:330px;
+}
+#geoDropHTML5 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+  margin: 0 auto 20px auto;
+  width: 650px;
+  height: 420px;
+  position: relative;
+  background: #29272f url(../images/frame.png) 0 0 no-repeat;
+}
+#geoHeader {
+	position:absolute;
+	left:10px;
+	top:10px;
+	color:#fef5e7;
+	font-size:18px;
+}
+#geoSubHeader {
+	float: left;
+	margin-top: 3px;
+}
+.mainTitle {
+float: left;
+margin-right: 6px;
+padding-left: 17px;
+padding-bottom: 4px;
+color:#fef5e7;
+font-size: 1.2em;
+}
+.imgOverlay {
+	position:absolute;
+	background-repeat:no-repeat;
+	z-index:2;
+	width:650px;
+	height:400px;
+}
+#map {
+	float:left;
+	clear:both;
+	width:650px;
+	height:360px;
+	position:relative;
+	top:58px;
+	background-color: inherit;
+	background-repeat: no-repeat;
+}
+#map svg {
+	position: absolute;
+}
+#map svg path {
+	stroke: #FFF;
+	stroke-width: 1;
+}
+#geoDropRightMenu {
+	position:absolute;
+	width:140px;
+	left:504px;
+	top:0px;
+	color:#fff;
+	padding:5px 0 5px 5px;
+	background: rgba(0, 0, 0, 0.5);
+	z-index:150;
+}
+#geoDropAccordionMenu {
+	position:relative;
+	width:134px;
+	top:0px;
+	left:3px;
+	background-color:#8c9d70;
+}
+.buttonHeader {
+	position:relative;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	width:130px;
+	height:24px;
+	cursor: pointer;
+	padding:6px 0 0 2px;
+	border:solid 1px #666;
+	background: #A8B791;
+	background: -moz-linear-gradient(top, #1e5799 0%, #a8b791 0%, #8a9c70 100%);
+	background: -webkit-linear-gradient(top, #1e5799 0%,#a8b791 0%,#8a9c70 100%);
+	background: linear-gradient(to bottom, #1e5799 0%,#a8b791 0%,#8a9c70 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#8a9c70',GradientType=0 ); /* IE6-9 */
+}
+.buttonHeader:hover {
+	background: #A8B791;
+}
+.buttonHeader:active {
+	background: #8F9C7C;
+}
+.buttonHolder {
+	position:relative;
+	margin:0 0 2px 0;
+}
+.drag {
+	position:relative;
+	left:2px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000;
+	width:120px;
+	/*background:-moz-linear-gradient(50% 50% 90deg, #dde2d4, #eaede5 10%);*/
+	background: #eaede5; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiNlYWVkZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZGRlMmQ0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(top,  #eaede5 10%, #dde2d4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,#eaede5), color-stop(100%,#dde2d4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eaede5 10%,#dde2d4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eaede5 10%,#dde2d4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eaede5 10%,#dde2d4 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #eaede5 10%,#dde2d4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaede5', endColorstr='#dde2d4',GradientType=0 ); /* IE6-8 */
+	border:solid 1px #666666;
+	padding:3px;
+	margin:2px 0 2px 1px;
+	cursor: pointer;
+}
+.drag:hover {
+  background: #F5F5F5;
+}
+.drop {
+	position:absolute;
+	background-color:#ffffff;
+  border:2px solid #ffffff;
+	border-radius:4px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	color:#000000;
+	margin:0px 0px 0px 0px;
+	text-align:center;
+	padding:2px 0px 0px 0px;
+	z-index:5;
+	opacity:0.8;
+}
+.clickable {
+	border:2px solid #666;
+	cursor:pointer;
+}
+.clickable:hover {
+	border:2px solid #ffffff;
+}
+.geoDropOutsideBox {
+	position:relative;
+	width:1px;
+	height:1px;
+	margin:0px;
+	padding:0px;
+	z-index:100;
+}
+#geoDropHintBox	{
+	position: absolute;
+	width: 638px;
+	height: 24px;
+	z-index: 800;
+	top: 40px;
+	left: 0;
+	color: #f5ab62;
+	padding-left: 28px;
+	padding-top: 3px;
+	font-size: 12px;
+}
+.circleImg {
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 50%;
+}
+#geoDropComBox {
+	width:200px;
+	padding:5px;
+	height:334px;
+	background: rgba(0, 0, 0, 0.2);
+}
+#geoDropComImg {
+	position:absolute;
+	top:22px;
+	width:200px;
+	height:150px;
+	border:1px solid #f0f0f0;
+}
+#geoDropContent {
+	margin:0px 0px 0px 0px;
+	padding:0px 3px 8px 6px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+#InstrImg {
+  position: absolute;
+	top: -57px;
+	right: 0;
+  font-size: 11px;
+  background: #FFF;
+  margin: 12px 12px;
+  text-align: center;
+  border-radius: 50%;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+  line-height: 1.6em;
+  box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.5);
+}
+#InstrImg:hover {
+  color: red;
+  box-shadow: none;
+}
+#InstrImg:active {
+  background: #DDD;
+}
+#geoDropWelcomeBox {
+	position: absolute;
+	z-index: 2000;
+	top: 80px;
+	left: 180px;
+	background-color: #F5F5F5;
+	opacity: .9;
+	box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+	width: 280px;
+	margin: 0px;
+	padding: 10px;
+	padding-bottom: 15px;
+}
+#geoDropWelcomeContent {
+	margin:0px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#000000;
+	font-size:11px;
+}
+.close {
+	cursor: pointer;
+	font-size: 10px;
+	font-weight: bold;
+	position: absolute;
+	left: 270px;
+	top: 1px;
+	border: 2px solid #666;
+	padding: 2px 4px;
+	margin: 5px;
+	border-radius: 3px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#geoDropCloseX:hover {
+	color: red;
+	border-color: orangered;
+}
+#geoDropCloseX:active {
+	color: #b70808;
+	border-color: #b33000;
+}
+.geoDropInstrTitle {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-align:left;
+	margin-bottom:12px;
+}
+circle {
+	opacity: 0.7;
+}
+.targetHover {
+	position: relative;
+}
+.targetHover:after, .clickable:after {
+	content: "";
+	position: absolute;
+	width: 118px;
+	height: 26px;
+	top: -5px;
+	left: -5px;
+	border: 1px dashed #FFF;
+	border-radius: 6px;
+	box-shadow: inset 0 0 2px #FFF;
+}
+.clickable:after {
+	border: none;
+	box-shadow: none;
+}
